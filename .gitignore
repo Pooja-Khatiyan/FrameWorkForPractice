@@ -1,15 +1,22 @@
+##############################
+## Project Outputs / Reports
+##############################
 allure-results/
+allure-report/
+allure-report/history/
 screenshots/
 screenshot/
 test-output/
-build/
 reports/
 logs/
-
-
+build/
+htmlreports/
+testng-results*.xml
 opencart.log
+activityLog.log
+
 ##############################
-## Java
+## Java / Build Artifacts
 ##############################
 .mtj.tmp/
 *.class
@@ -18,11 +25,14 @@ opencart.log
 *.ear
 *.nar
 hs_err_pid*
-activityLog.log
+replay_pid*
+
 ##############################
 ## Maven
 ##############################
 target/
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -31,18 +41,17 @@ pom.xml.bak
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
-.mvn/timing.properties
-.mvn/wrapper/maven-wrapper.jar
 
 ##############################
 ## IntelliJ
 ##############################
-out/
 .idea/
 .idea_modules/
 *.iml
 *.ipr
 *.iws
+out/
+
 ##############################
 ## Eclipse
 ##############################
@@ -60,6 +69,16 @@ local.properties
 .loadpath
 .factorypath
 
-## OS X
+##############################
+## Jenkins / CI
+##############################
+.jenkins/
+workspace/
+jobs/
+builds/
+
+##############################
+## OS / General
 ##############################
 .DS_Store
+Thumbs.db
