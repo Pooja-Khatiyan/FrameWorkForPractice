@@ -23,7 +23,7 @@ public class LoginPage {
 	}
 
 	public String getLoginPageTitle() {
-		String title = eleUtil.waitForTitleIs("Account Login", AppConstants.MEDIUM_DEFAULT_WAIT);
+		String title = eleUtil.waitForTitleIs("Account Login1", AppConstants.MEDIUM_DEFAULT_WAIT);
 		System.out.println("title is : " + title);
 		return title;
 	}
